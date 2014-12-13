@@ -7,3 +7,7 @@ src_managed/
 project/boot/
 .history
 .cache
+
+.*.swp
+
+*.class
