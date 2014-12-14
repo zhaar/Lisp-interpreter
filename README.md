@@ -13,18 +13,32 @@ This will run a (supposedly) Scheme-- interpreter. We were given specifications 
 course and as such I don't know if it follow actual Scheme-- specs.
 
 You can declare variables like so
+
     (val v 3)    //This will bound v to 3
 
 You can declare functions like so
+
     (def (plusOne x) (+ x 1))
 
 This is syntactic sugar for
+
     (def plusOne (lambda (x) (+ x 1)))
 
 The interpreter supports reccursive definitions so you can write
+
     (def (factorial x) (if (= x 1)
       1
       (* x (factorial (- x 1)))))
+
+The course asked us to add 'switch-like' constructs with the keyword `case`
+
+    (case 3
+      (1 1)
+      (2 1)
+      (3 2)
+      (else 0)
+    )// returns 2
+
 
 Disclaimer
 ----------
