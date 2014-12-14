@@ -29,6 +29,7 @@ The interpreter supports reccursive definitions so you can write
     (def (factorial x) (if (= x 1)
       1
       (* x (factorial (- x 1)))))
+    (factorial 3) // returns 6
 
 The course asked us to add 'switch-like' constructs with the keyword `case`
 
@@ -38,6 +39,7 @@ The course asked us to add 'switch-like' constructs with the keyword `case`
       (3 2)
       (else 0)
     )// returns 2
+
 
 
 Disclaimer
